@@ -25,48 +25,59 @@
 
    ```bash
    git clone https://github.com/gsdsdfa/Test.git
+   Перейдите в папку с проектом:
 
-2. После клонирования репозитория перейдите в папку с проектом:
+bash
+Run
+Copy code
+cd Test
+Установите Chocolatey (если он еще не установлен):
 
-   ```bash
-   cd Test
+Откройте терминал с правами администратора и выполните следующую команду:
 
-3. Установите зависимости:
- Откройте терминал с правами администратора
+bash
+Run
+Copy code
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+Установите Node.js:
 
-   ```bash
-   @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object               System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+После установки Chocolatey выполните следующую команду:
 
-```bash
-   choco install nodejs
+bash
+Run
+Copy code
+choco install nodejs
+Проверьте версии Node.js и npm:
 
- 4. Для проверки версий:
-   ```bash
-   node -v
+bash
+Run
+Copy code
+node -v
+bash
+Run
+Copy code
+npm -v
+Запустите приложение:
 
-   ```bash
-   nmp -v
- 
-   
+Убедитесь, что у вас установлены Node.js и npm. Затем выполните следующую команду для запуска приложения:
 
-5. Убедитесь, что у вас установились Node.js и npm. Затем выполните следующую команду для запуска приложения:
-
-   Запуск приложения
-   Чтобы запустить приложение в режиме разработки, выполните следующую команду:
-
-   ```bash
-   npm start
-
+bash
+Run
+Copy code
+npm start
 После этого приложение будет доступно по адресу http://localhost:3000. Откройте этот адрес в вашем веб-браузере, чтобы увидеть приложение.
 
- 6. Сборка приложения
-   Чтобы собрать приложение для продакшена, выполните следующую команду:
+Сборка приложения:
 
-   ```bash
-   npm run build
+Чтобы собрать приложение для продакшена, выполните следующую команду:
+
+bash
+Run
+Copy code
+npm run build
 Собранные файлы будут находиться в папке build. Эти файлы можно развернуть на любом веб-сервере.
 
-Использование:
-   Врачи: Перейдите на страницу "Врачи", чтобы увидеть список врачей, их ФИО и отделение.
-   Медсестры: Перейдите на страницу "Медсестры", чтобы увидеть список медсестер и их отделение.
-   Добавление/Редактирование/Удаление: Вы можете добавлять, редактировать и удалять записи работников.
+Использование
+Врачи: Перейдите на страницу "Врачи", чтобы увидеть список врачей, их ФИО и отделение.
+Медсестры: Перейдите на страницу "Медсестры", чтобы увидеть список медсестер и их отделение.
+Добавление/Редактирование/Удаление: Вы можете добавлять, редактировать и удалять записи работников.
