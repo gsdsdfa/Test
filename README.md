@@ -25,13 +25,13 @@
 
    ```bash
    git clone https://github.com/gsdsdfa/Test.git
-   Перейдите в папку с проектом:
+2. Перейдите в папку с проектом:
 
 bash
 Run
 Copy code
 cd Test
-Установите Chocolatey (если он еще не установлен):
+3. Установите Chocolatey (если он еще не установлен):
 
 Откройте терминал с правами администратора и выполните следующую команду:
 
@@ -39,7 +39,7 @@ bash
 Run
 Copy code
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-Установите Node.js:
+4. Установите Node.js:
 
 После установки Chocolatey выполните следующую команду:
 
@@ -47,7 +47,7 @@ bash
 Run
 Copy code
 choco install nodejs
-Проверьте версии Node.js и npm:
+5. Проверьте версии Node.js и npm:
 
 bash
 Run
@@ -57,7 +57,7 @@ bash
 Run
 Copy code
 npm -v
-Запустите приложение:
+6. Запустите приложение:
 
 Убедитесь, что у вас установлены Node.js и npm. Затем выполните следующую команду для запуска приложения:
 
@@ -67,7 +67,7 @@ Copy code
 npm start
 После этого приложение будет доступно по адресу http://localhost:3000. Откройте этот адрес в вашем веб-браузере, чтобы увидеть приложение.
 
-Сборка приложения:
+7. Сборка приложения:
 
 Чтобы собрать приложение для продакшена, выполните следующую команду:
 
