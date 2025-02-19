@@ -50,8 +50,8 @@
    ```bash
    node -v
 
-   ````bash
-   npm -v
+      ```bash
+      npm -v
 
 6. **Запустите приложение:**
 
