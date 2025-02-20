@@ -39,7 +39,7 @@
 
 4. **Установите Node.js:**
 
-   После установки Chocolatey выполните следующую команду:
+   После установки Chocolatey выполните следующую команду в PowerShell:
 
    ```bash
    choco install nodejs
